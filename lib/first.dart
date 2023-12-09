@@ -191,9 +191,9 @@ class _CalcaState extends State<Calca> {
   void join(String value) {
     if (value != Btn.dot && int.tryParse(value) == null) {
       operator = value;
-      // if (operator.isNotEmpty && value_second.isNotEmpty) {
-      //   equality();
-      // }
+      if (operator.isNotEmpty && value_second.isNotEmpty) {
+        equality();
+      }
     } else if (value_one.isEmpty || operator.isEmpty) {
       if (value == Btn.dot && value_one.contains(Btn.dot)) {
         return;
