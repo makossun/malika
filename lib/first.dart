@@ -67,7 +67,7 @@ class _CalcaState extends State<Calca> {
       child: Material(
         clipBehavior: Clip.hardEdge,
         color: [Btn.clear, Btn.del, Btn.per, Btn.eqaual].contains(value)
-            ? const Color.fromARGB(255, 99, 99, 99)
+            ? Color.fromARGB(255, 141, 71, 71)
             : [Btn.plus, Btn.minus, Btn.divide, Btn.multiply].contains(value)
                 ? const Color.fromARGB(255, 0, 0, 0)
                 : Color.fromARGB(255, 58, 81, 228),
